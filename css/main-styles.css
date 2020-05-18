@@ -1050,6 +1050,42 @@ footer.footer .move-up span:hover{
         background-attachment: scroll;
     }
 
+    .portfolio-items-wrapper{
+      grid-template-columns: 1fr;
+    }
+
+    .img-text-wrapper {
+      display: grid;
+      width: 100%;
+      padding-left: 100px;
+      padding-right: 100px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+    }
+
+    .img-text-wrapper .subtitle {
+      display: grid;
+      width: 100%;
+      color: black;
+      background: lightgray;
+      opacity: 60%;
+      padding: 20px;
+    }
+
+    .image-blur {
+      display: none;
+    }
+
+    .img-text-wrapper:hover .subtitle {
+      display: none;
+    }
+
+    .logo-wrapper img {
+      display: none;
+    }
+
     footer.footer .container{
         position: relative;
         grid-template-columns: repeat(2, 1fr);
@@ -1076,21 +1112,6 @@ footer.footer .move-up span:hover{
         grid-template-columns: 100%;
     }
 
-
-    .portfolio-items-wrapper{
-      grid-template-columns: 1fr;
-    }
-
-    .img-text-wrapper {
-      position: relative;
-      padding-bottom: 100px;
-    }
-
-    .img-text-wrapper .subtitle {
-      transition: none;
-      color: black;
-      background-color: var(--sky);
-    }
 
     footer.footer .container{
         position: relative;
