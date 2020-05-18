@@ -1079,9 +1079,7 @@ footer.footer .move-up span:hover{
       grid-template-columns: 1fr;
     }
 
-    .portfolio-item-wrapper{
-      position: absolute;
-    }
+    
 
     footer.footer{
         display: none !important;
