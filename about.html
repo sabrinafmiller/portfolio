@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main-styles.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="./css/all.css">
+
+  <!-- ------------ AOS Library ------------------------- -->
+  <link rel="stylesheet" href="./css/aos.css">
+
+  <title>About</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="about.html">About</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="product.html">Product</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="case-studies.html">Case Studies</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          SABRINA MILLER
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper"  data-aos="fade-up" data-aos-delay="300">
+      <div class="two-column-wrapper">
+        <div class="profile-image-wrapper">
+          <img src="images/linkedin.jpg" alt="">
+
+        </div>
+
+        <div class="profile-content-wrapper"  data-aos="fade-up" data-aos-delay="300">
+          <h1>Hi, thanks for visiting my site!</h1>
+          <p data-aos="fade-up" data-aos-delay="400">With over a decade of development experience in a number of industries I realized that the typical product creation
+            process between clients and developers was flawed. All too often developers rarely communicate to clients throughout
+            the development stage, resulting in a final product that fails to reach the goal sought by the customer and end
+            user.
+          </p>
+
+          <p data-aos="fade-up" data-aos-delay="500">For this reason I decided to utilize a completely different development pattern that focuses on highly focused
+            communication and transparent design patterns. When I take on a project not only do I work to craft the application
+            according to the client's specifications, I give daily updates to ensure that the project is aligning properly
+            with the client's goals. The end result is the right product, delivered on time, and on budget.</p>
+
+            <p data-aos="fade-up" data-aos-delay="600">For this reason I decided to utilize a completely different development pattern that focuses on highly focused
+              communication and transparent design patterns. When I take on a project not only do I work to craft the application
+              according to the client's specifications, I give daily updates to ensure that the project is aligning properly
+              with the client's goals. The end result is the right product, delivered on time, and on budget.</p>
+
+              <p data-aos="fade-up" data-aos-delay="700">For this reason I decided to utilize a completely different development pattern that focuses on highly focused
+                communication and transparent design patterns. When I take on a project not only do I work to craft the application
+                according to the client's specifications, I give daily updates to ensure that the project is aligning properly
+                with the client's goals. The end result is the right product, delivered on time, and on budget.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------ Contact Me Section ------->
+    <div class="contact-section" id="contact-id">
+
+      <h1 data-aos="fade-up" data-aos-delay="100">Contact Me</h1>
+      <div class="contact-border"></div>
+      <form class="contact-form" method="post" id="contact-form" action="contact-form-handler.php">
+        <input name="name" type="text" class="contact-form-text" placeholder="Your name" data-aos="fade-up" data-aos-delay="200" required>
+        <input name="email" type="text" class="contact-form-text" placeholder="Your email" data-aos="fade-up" data-aos-delay="300" required>
+        <textarea name="message" class="contact-form-text" placeholder="Message" data-aos="fade-up" data-aos-delay="400" required></textarea>
+        <input type="submit" class="contact-form-btn" value="Send" data-aos="fade-left" data-aos-delay="400">
+      </form>
+
+    </div>
+
+  <!----x--- Contact Me Section ---x---->
+
+</body>
+
+<!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>Overview</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia atque nemo ad modi officiis
+                    iure, autem nulla tenetur repellendus.</p>
+            </div>
+
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow me</h2>
+                <p>Let's be Social</p>
+                <div>
+                  <a href="https://www.linkedin.com/in/sabrina-miller-775611a3/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://www.facebook.com/sabrinamiller05" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.instagram.com/sabrinamilleyyy/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+<!-- -------------x------------- Footer --------------------x------------------- -->
+
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+<!-- Jquery Library file -->
+<script src="./js/Jquery3.4.1.min.js"></script>
+
+<!-- --------- Owl-Carousel js ------------------->
+<script src="./js/owl.carousel.min.js"></script>
+
+<!-- ------------ AOS js Library  ------------------------- -->
+<script src="./js/aos.js"></script>
+
+<!-- Custom Javascript file -->
+<script src="./js/main.js"></script>
+
+</html>

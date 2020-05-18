@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main-styles.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="./css/all.css">
+
+  <!-- ------------ AOS Library ------------------------- -->
+  <link rel="stylesheet" href="./css/aos.css">
+
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="product.html">Product</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="case-studies.html">Case Studies</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          SABRINA MILLER
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <a href="about.html">
+          <div class="portfolio-item-wrapper" data-aos="fade-right" data-aos-delay="400">
+            <div class="portfolio-img-background" style="background-image:url(images/laughing2.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/dailysmarty.png" alt="">
+              </div>
+
+              <div class="subtitle">Here's a little about me!</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="product.html">
+          <div class="portfolio-item-wrapper" data-aos="fade-left" data-aos-delay="400">
+            <div class="portfolio-img-background" style="background-image:url(images/camera.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/shop-hacker.png" alt="">
+              </div>
+
+              <div class="subtitle">Blogging everything about product. Breaking into product, product case studies, PM book reviews, side projects, and more. </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="blog.html">
+          <div class="portfolio-item-wrapper" data-aos="fade-right" data-aos-delay="400">
+            <div class="portfolio-img-background" style="background-image:url(images/green.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/crondose.png" alt="">
+              </div>
+              <div class="subtitle">PM Case Studies <br> Researching, analyzing, and reporting on specific company products and potential product strategy.</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#footer">
+          <div class="portfolio-item-wrapper" data-aos="fade-left" data-aos-delay="400">
+            <div class="portfolio-img-background" style="background-image:url(images/coffees3.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/dashtrack.png" alt="">
+              </div>
+
+              <div class="subtitle">I'd love to connect!<br>Connect with me on LinkedIn or other social media platforms with the icons below. Or head to my "About" page for additional contact info.
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>Overview</h2>
+                <p>A former technical project analyst breaking into product management one book, side project, and blog post at a time. </p>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow me</h2>
+                <p>Let's be Social</p>
+                <div>
+                  <a href="https://www.linkedin.com/in/sabrina-miller-775611a3/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://www.facebook.com/sabrinamiller05" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.instagram.com/sabrinamilleyyy/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+<!-- -------------x------------- Footer --------------------x------------------- -->
+
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+<!-- Jquery Library file -->
+<script src="./js/Jquery3.4.1.min.js"></script>
+
+<!-- --------- Owl-Carousel js ------------------->
+<script src="./js/owl.carousel.min.js"></script>
+
+<!-- ------------ AOS js Library  ------------------------- -->
+<script src="./js/aos.js"></script>
+
+<!-- Custom Javascript file -->
+<script src="./js/main.js"></script>
+
+</html>
