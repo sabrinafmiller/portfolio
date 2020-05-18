@@ -1064,6 +1064,7 @@ footer.footer .move-up span:hover{
       align-items: center;
       text-align: center;
       height: 100%;
+      top: none;
     }
 
     .img-text-wrapper .subtitle {
@@ -1127,6 +1128,7 @@ footer.footer .move-up span:hover{
       align-items: center;
       text-align: center;
       height: 100%;
+      top: none;
     }
 
     .img-text-wrapper .subtitle {
@@ -1173,6 +1175,10 @@ footer.footer .move-up span:hover{
         display: none;
     }
 
+    .content-wrapper{
+      display: grid;
+      grid-template-columns: 100%;
+    }
     .portfolio-items-wrapper{
       grid-template-columns: 1fr;
       width:100%;
@@ -1187,6 +1193,7 @@ footer.footer .move-up span:hover{
       align-items: center;
       text-align: center;
       height: 100%;
+      top: none;
     }
 
     .img-text-wrapper .subtitle {
