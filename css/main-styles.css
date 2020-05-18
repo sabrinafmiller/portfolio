@@ -1193,7 +1193,7 @@ footer.footer .move-up span:hover{
       align-items: center;
       text-align: center;
       height: 100%;
-      top: none;
+      top: auto;
     }
 
     .img-text-wrapper .subtitle {
