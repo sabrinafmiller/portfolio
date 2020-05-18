@@ -1054,13 +1054,13 @@ footer.footer .move-up span:hover{
       grid-template-columns: 100%;
     }
     .portfolio-items-wrapper{
-      grid-template-columns: 1fr;
-      width:100%;
+      grid-template-columns: 100%;
+
     }
 
     .img-text-wrapper {
       display: grid;
-      width: 100%;
+
       padding-left: 100px;
       padding-right: 100px;
       justify-content: center;
@@ -1121,13 +1121,13 @@ footer.footer .move-up span:hover{
       grid-template-columns: 100%;
     }
     .portfolio-items-wrapper{
-      grid-template-columns: 1fr;
-      width:100%;
+      grid-template-columns: 100%;
+
     }
 
     .img-text-wrapper {
       display: grid;
-      width: 100%;
+
       padding-left: 100px;
       padding-right: 100px;
       justify-content: center;
@@ -1139,7 +1139,7 @@ footer.footer .move-up span:hover{
 
     .img-text-wrapper .subtitle {
       display: grid;
-      width: 100%;
+
       color: black;
       background: lightgray;
       opacity: 60%;
@@ -1186,13 +1186,12 @@ footer.footer .move-up span:hover{
       grid-template-columns: 100%;
     }
     .portfolio-items-wrapper{
-      grid-template-columns: 1fr;
-      width:100%;
+      grid-template-columns: 100%;
     }
 
     .img-text-wrapper {
       display: grid;
-      width: 100%;
+
       padding-left: 100px;
       padding-right: 100px;
       justify-content: center;
@@ -1204,7 +1203,7 @@ footer.footer .move-up span:hover{
 
     .img-text-wrapper .subtitle {
       display: grid;
-      width: 100%;
+
       color: black;
       background: lightgray;
       opacity: 60%;
