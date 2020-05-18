@@ -1050,9 +1050,8 @@ footer.footer .move-up span:hover{
         background-attachment: scroll;
     }
 
-    footer.footer {
-        display: none !important;
-
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
@@ -1076,13 +1075,10 @@ footer.footer .move-up span:hover{
         grid-template-columns: 100%;
     }
 
-    .portfolio-items-wrapper{
-      grid-template-columns: 1fr;
-    }
+    
 
-
-    footer.footer {
-        display: none !important;
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
@@ -1102,11 +1098,14 @@ footer.footer .move-up span:hover{
         display: none;
     }
 
-    footer.footer {
-        display: none;
+    footer.footer .container > div{
+        padding:  1rem .9rem !important;
     }
 
-
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
 
     nav .toggle-collapse{
         width: 80% !important;
