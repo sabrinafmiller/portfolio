@@ -1077,6 +1077,7 @@ footer.footer .move-up span:hover{
 
     .content-wrapper .portfolio-items-wrapper{
       grid-template-columns: 100%;
+      grid-template-columns: repeat(1, 1fr);
     }
 
     .content-wrapper .portfolio-items-wrapper .portfolio-item-wrapper{
