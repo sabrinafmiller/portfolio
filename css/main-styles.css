@@ -1050,7 +1050,7 @@ footer.footer .move-up span:hover{
         background-attachment: scroll;
     }
 
-    footer.footer .container{
+    footer.footer {
         display: none !important;
 
     }
@@ -1081,7 +1081,7 @@ footer.footer .move-up span:hover{
     }
 
 
-    footer.footer .container{
+    footer.footer {
         display: none !important;
     }
 
@@ -1102,11 +1102,11 @@ footer.footer .move-up span:hover{
         display: none;
     }
 
-    footer.footer .container {
-        display: none !important;
+    footer.footer {
+        display: none;
     }
 
-  
+
 
     nav .toggle-collapse{
         width: 80% !important;
