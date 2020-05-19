@@ -1112,32 +1112,32 @@ footer.footer .move-up span:hover{
     main .site-content{
         grid-template-columns: 100%;
     }
-    main .content-wrapper{
-      display: grid;
-      grid-template-columns: 100%;
-    }
+
     .portfolio-items-wrapper{
-      grid-template-columns: 100%;
+      grid-template-columns: 1fr;
+      width: 100%;
 
     }
     .portfolio-img-background {
-      position: relative;
+      display: flex;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-self: center;
+      background-size: cover;
+      background-position: center;
     }
     .img-text-wrapper {
-      position: relative;
-      display: grid;
       position: relative;
       padding-left: 100px;
       padding-right: 100px;
       justify-content: center;
       align-items: center;
       text-align: center;
-      height: 100%;
+      width: 100%;
     }
 
     .img-text-wrapper .subtitle {
-      display: grid;
-
       color: black;
       background: lightgray;
       opacity: 60%;
