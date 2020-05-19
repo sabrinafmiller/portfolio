@@ -1075,6 +1075,7 @@ footer.footer .move-up span:hover{
     }
 
     .img-text-wrapper .subtitle {
+      position: relative;
       display: grid;
       width: 100%;
       color: black;
@@ -1088,7 +1089,7 @@ footer.footer .move-up span:hover{
     }
 
     .img-text-wrapper:hover .subtitle {
-      hover: none;
+      display: none;
     }
 
     .logo-wrapper img {
@@ -1132,6 +1133,7 @@ footer.footer .move-up span:hover{
       position: relative;
     }
     .img-text-wrapper {
+      position: relative;
       display: grid;
       position: relative;
       padding-left: 100px;
@@ -1203,6 +1205,7 @@ footer.footer .move-up span:hover{
 
     .img-text-wrapper .subtitle {
       display: grid;
+      position: relative;
 
       color: black;
       background: lightgray;
