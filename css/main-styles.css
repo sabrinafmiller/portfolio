@@ -1064,6 +1064,7 @@ footer.footer .move-up span:hover{
 
     .img-text-wrapper {
       display: grid;
+      position: relative;
       padding-left: 100px;
       padding-right: 100px;
       justify-content: center;
@@ -1132,7 +1133,7 @@ footer.footer .move-up span:hover{
     }
     .img-text-wrapper {
       display: grid;
-
+      position: relative;
       padding-left: 100px;
       padding-right: 100px;
       justify-content: center;
@@ -1149,14 +1150,6 @@ footer.footer .move-up span:hover{
       background: lightgray;
       opacity: 60%;
       padding: 20px;
-    }
-
-    .image-blur {
-      display: none;
-    }
-
-    .img-text-wrapper:hover .subtitle {
-      hover: none;
     }
 
     .logo-wrapper img {
@@ -1198,6 +1191,7 @@ footer.footer .move-up span:hover{
     }
     .img-text-wrapper {
       display: grid;
+      position: relative;
       padding-left: 100px;
       padding-right: 100px;
       justify-content: center;
@@ -1214,10 +1208,6 @@ footer.footer .move-up span:hover{
       background: lightgray;
       opacity: 60%;
       padding: 20px;
-    }
-
-    .image-blur {
-      display: none;
     }
 
     .img-text-wrapper:hover .subtitle {
