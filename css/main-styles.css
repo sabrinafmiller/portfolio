@@ -897,7 +897,6 @@ main .case-post-content .case-post-title{
 }
 
 .article-img-background{
-  background: url('../images/camera3.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
