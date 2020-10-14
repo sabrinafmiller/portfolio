@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main-styles.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="./css/all.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!-- ------------ AOS Library ------------------------- -->
+  <link rel="stylesheet" href="./css/aos.css">
+
+  <!-- Custom Style   -->
+  <link rel="stylesheet" href="./css/main-styles.css">
+
+  <!-- --------- Owl-Carousel ------------------->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+  <title>Article</title>
+</head>
+
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper">
+            <a href="index.html">Home</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="product.html">Product</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="case-studies.html">Case Studies</a>
+          </div>
+
+        </div>
+
+        <div class="right-side">
+          <div class="brand">
+            SABRINA MILLER
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------- article ---------------------------------------- -->
+    <div class="article-img-background" style="background-image:url(images/plant-writer.jpg)" data-aos="fade-up" data-aos-delay="600">
+      <h1 data-aos="fade-up" data-aos-delay="900">Hard Coded<br>Blog</h1>
+        <a href="#article-scroll">
+            <div class="scroll-down">
+                <span class="arrow-down"><i class="fas fa-chevron-down"></i></span>
+            </div>
+        </a>
+    </div>
+    <div class="article-background">
+      <div class="container-card" id="article-scroll">
+        <h3 data-aos="fade-up" data-aos-delay="200">Side Projects</h3>
+        <h1 data-aos="fade-up" data-aos-delay="300">My First Personal Lean Project</h1>
+        <p data-aos="fade-up" data-aos-delay="400" >
+          A question I often asked PMs was: “Looking back if you were to break into product again, how would you go about it?” And this is the answer I most often received: “Start by building your own side product or project and learn how to be comfortable with failing.” So I took that answer to heart and built a Covid-19 Dashboard back in March and failed. Miserably. However, I learned that there is an art to building a product and differs greatly from managing projects. In light of my failure, I decided to pick up a few books and online courses to see where I went wrong. And let me tell you, there were a lot of wrongs. But with a mind full of new knowledge and ambition I decided to try again. This time with Lean Agile.
+          <br><br>
+          I wanted to document my experience breaking into product. It is no easy feat and I would love nothing more than to empower other women to embark on this journey by learning from my mistakes and building the confidence to shine in this profession. Therefore I decided to build a blog. However, I wanted to get my hands dirty and really dive into product design. So instead of buying a subscription to WordPress, I chose to hard code it myself from scratch.
+          <br><br>
+          I can’t even tell you how many hours were spent building this blog. But here are the <br><b>3 main lessons I learned:</b> <br><br>
+          <b>1)</b> Prioritization is the name of the game. Calculate what is needed and what are considered nice-to-haves when planning to build the first MVP. I spent an immense amount of time on features that were not necessary to the first MVP and in the end they got axed anyways. Prioritize first so you don’t waste time or resources and stick to your agile method.
+          <br>
+          <b>2)</b> Find what the objective of the product or feature is and continue to ask why. This helps to find if what you’re going to build is actually necessary and if it significantly contributes to the main objective of the product.
+          <br>
+          <b>3)</b> Failures are lessons not reasons to doubt yourself. It’s important to know what doesn’t work and what people don’t find value in, so you can find out what they do. That being said, failure means iteration and iteration means you are one step closer to finding customer/user value.
+          <br><br>
+          This blog was my first successful lean agile product and has opened the doors to many more. It has taught me to prioritize, focus on the objective, and to fail fast. And it all started with a question and a piece of advice.
+
+
+
+           <br><br><br>
+
+        </p>
+
+        </div>
+    </div>
+
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                    <h2>Overview</h2>
+                    <p>A former technical project analyst breaking into product management one book, side project, and blog post at a time.</p>
+                </div>
+
+                <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                    <h2>Follow me</h2>
+                    <p>Let's be Social</p>
+                    <div>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="move-up">
+                <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+            </div>
+        </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+
+    <script>
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+	     $(".zoom img").css({
+		       transform: 'translate3d(-50%, -'+(scroll/100)+'%, 0) scale('+(100 + scroll/5)/100+')',
+		//Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments
+		//"-webkit-filter": "blur(" + (scroll/200) + "px)",
+		//filter: "blur(" + (scroll/200) + "px)"
+	   });
+    });
+
+
+    </script>
+
+</html>

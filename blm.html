@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main-styles.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="./css/all.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!-- ------------ AOS Library ------------------------- -->
+  <link rel="stylesheet" href="./css/aos.css">
+
+  <!-- Custom Style   -->
+  <link rel="stylesheet" href="./css/main-styles.css">
+
+  <!-- --------- Owl-Carousel ------------------->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+  <title>Article</title>
+</head>
+
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper">
+            <a href="index.html">Home</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="product.html">Product</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="case-studies.html">Case Studies</a>
+          </div>
+
+        </div>
+
+        <div class="right-side">
+          <div class="brand">
+            SABRINA MILLER
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------- article ---------------------------------------- -->
+    <div class="article-img-background" style="background-image:url(images/blm-fist.jpg)" data-aos="fade-up" data-aos-delay="600">
+      <h1 data-aos="fade-up" data-aos-delay="900">The BLM<br>Conversation App</h1>
+        <a href="#article-scroll">
+            <div class="scroll-down">
+                <span class="arrow-down"><i class="fas fa-chevron-down"></i></span>
+            </div>
+        </a>
+    </div>
+    <div class="article-background">
+      <div class="container-card" id="article-scroll">
+        <h3 data-aos="fade-up" data-aos-delay="200">Side Projects</h3>
+        <h1 data-aos="fade-up" data-aos-delay="300">BLM Conversation Guide App</h1>
+        <p data-aos="fade-up" data-aos-delay="400" >
+          2020. We live in dividing times whether we are open to discussing it or not. Conversations regarding race have become increasingly difficult to keep peaceful. And family dinners or visits from relatives have turned into a war zone of opposing stances and ideas. So how do we move forward from this?
+<br><br>
+First, let’s get some background on what the BLM movement is and why it’s important. The Black Lives Matter movement shines light on racially motivated injustices and police brutality against black people. The BLM movement advocates for change with non-violent disobedience and protesting while educating on systematic racism and demanding justice for victims of racial violence. Unfortunately, this crucial movement has been politicized and almost criminalized by a part of the US, causing many people to lose sight of its magnitude and significance. So again, how do we move forward when we are so divided?
+<br><br>
+<b>Educate. Educate. Educate.</b>
+<br><br>
+The only way to progress forward is to fight misinformation and help educate one another with unbiased information, historical references, and statistics. This is the whole idea behind the BLM Conversation Guide. I wanted to build an application that gives young adults the confidence to have uncomfortable conversations regarding race by providing unbiased and factual information as well as resources to structure productive discussions.
+<br><br>
+A great deal of research regarding racial injustices went into this product from books, documentaries, articles, interviews, protests, and even travelling to visit the CHOP in Seattle first hand. This is a project I am strongly passionate about and one that I hope can make a difference in someone’s life. That being said, research was the easy part but building an application is difficult. Especially if you have never built one before. I decided to build using the Lean Agile Method and launch a Minimum Viable Product. Since I am not an app developer, I decided to use a template on Code Canyon that allows the user to connect a WordPress Blog and configure accordingly. This way I can use the least amount of resources while testing if this is a product users find value in and iterate if needed. As of now, I am still in the configuration process and will update this article as I move to the testing phase and so forth.
+<br><br>
+Update coming.
+<br><br><br>
+
+
+        </p>
+
+        </div>
+    </div>
+
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                    <h2>Overview</h2>
+                    <p>A former technical project analyst breaking into product management one book, side project, and blog post at a time.</p>
+                </div>
+
+                <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                    <h2>Follow me</h2>
+                    <p>Let's be Social</p>
+                    <div>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="move-up">
+                <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+            </div>
+        </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+
+    <script>
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+	     $(".zoom img").css({
+		       transform: 'translate3d(-50%, -'+(scroll/100)+'%, 0) scale('+(100 + scroll/5)/100+')',
+		//Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments
+		//"-webkit-filter": "blur(" + (scroll/200) + "px)",
+		//filter: "blur(" + (scroll/200) + "px)"
+	   });
+    });
+
+
+    </script>
+
+</html>

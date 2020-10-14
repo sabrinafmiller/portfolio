@@ -452,7 +452,7 @@ section > .new{
   width: 100%;
   padding-top: 2.5rem;
   font-family: var(--Lexend);
-  color: #black;
+  color: black;
   font-weight: 600;
 
 }
@@ -480,10 +480,6 @@ main .blog-content .btn-blog{
     padding: .7rem 2rem;
     background: var(--sky);
     margin: .5rem;
-}
-
-main .blog-content .btn-blog a:hover{
-    color: lightseagreen;
 }
 
 main .blog-content span{
@@ -903,14 +899,33 @@ main .case-post-content .case-post-title{
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 77vh;
+  height: 80vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
-  font-size: 70px;
   display: grid;
   justify-items: center;
+}
 
+.article-img-background h1{
+  font-size: 60px;
+  padding-bottom: 0;
+
+}
+.article-img-background .scroll-down .arrow-down{
+  color: white;
+  font-size: 2rem;
+  display: grid;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  padding-top: 0;
+}
+
+.article-img-background .scroll-down .arrow-down:hover{
+  color: lightseagreen;
+  background: transparent;
 }
 .container-card{
   background-color: white;

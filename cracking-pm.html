@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main-styles.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="./css/all.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!-- ------------ AOS Library ------------------------- -->
+  <link rel="stylesheet" href="./css/aos.css">
+
+  <!-- Custom Style   -->
+  <link rel="stylesheet" href="./css/main-styles.css">
+
+  <!-- --------- Owl-Carousel ------------------->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+  <title>Article</title>
+</head>
+
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper">
+            <a href="index.html">Home</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="product.html">Product</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="case-studies.html">Case Studies</a>
+          </div>
+
+        </div>
+
+        <div class="right-side">
+          <div class="brand">
+            SABRINA MILLER
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------- article ---------------------------------------- -->
+    <div class="article-img-background" style="background-image:url(images/thumbs-up.jpg)" data-aos="fade-up" data-aos-delay="600">
+      <h1 data-aos="fade-up" data-aos-delay="900">Cracking the<br>PM Interview</h1>
+        <a href="#article-scroll">
+            <div class="scroll-down">
+                <span class="arrow-down"><i class="fas fa-chevron-down"></i></span>
+            </div>
+        </a>
+    </div>
+    <div class="article-background">
+      <div class="container-card" id="article-scroll">
+        <h3 data-aos="fade-up" data-aos-delay="200">Book Review</h3>
+        <h1 data-aos="fade-up" data-aos-delay="300"><i>Cracking the PM Interview</i><br>Review</h1>
+        <p data-aos="fade-up" data-aos-delay="400" >
+
+          <b>COMING SOON</b> 
+
+<br><br><br>
+
+
+        </p>
+
+        </div>
+    </div>
+
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                    <h2>Overview</h2>
+                    <p>An APM intern and former technical project analyst breaking into product management one book, side project, and blog post at a time.</p>
+                </div>
+
+                <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                    <h2>Follow me</h2>
+                    <p>Let's be Social</p>
+                    <div>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="move-up">
+                <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+            </div>
+        </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+
+    <script>
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+	     $(".zoom img").css({
+		       transform: 'translate3d(-50%, -'+(scroll/100)+'%, 0) scale('+(100 + scroll/5)/100+')',
+		//Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments
+		//"-webkit-filter": "blur(" + (scroll/200) + "px)",
+		//filter: "blur(" + (scroll/200) + "px)"
+	   });
+    });
+
+
+    </script>
+
+</html>

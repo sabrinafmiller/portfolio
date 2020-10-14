@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main-styles.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="./css/all.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!-- ------------ AOS Library ------------------------- -->
+  <link rel="stylesheet" href="./css/aos.css">
+
+  <!-- Custom Style   -->
+  <link rel="stylesheet" href="./css/main-styles.css">
+
+  <!-- --------- Owl-Carousel ------------------->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+  <title>Article</title>
+</head>
+
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper">
+            <a href="index.html">Home</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="product.html">Product</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="case-studies.html">Case Studies</a>
+          </div>
+
+        </div>
+
+        <div class="right-side">
+          <div class="brand">
+            SABRINA MILLER
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------- article ---------------------------------------- -->
+    <div class="article-img-background" style="background-image:url(images/portfolio7.jpg)" data-aos="fade-up" data-aos-delay="600">
+      <h1 data-aos="fade-up" data-aos-delay="900">The Lean<br>Product Playbook</h1>
+        <a href="#article-scroll">
+            <div class="scroll-down">
+                <span class="arrow-down"><i class="fas fa-chevron-down"></i></span>
+            </div>
+        </a>
+    </div>
+    <div class="article-background">
+      <div class="container-card" id="article-scroll">
+        <h3 data-aos="fade-up" data-aos-delay="200">Book Review</h3>
+        <h1 data-aos="fade-up" data-aos-delay="300"><i>The Lean Product Playbook</i><br>Review</h1>
+        <p data-aos="fade-up" data-aos-delay="400" >
+
+          <b>Overview:</b> This book provides clear, step-by-step guidance to help build successful products. The author provides a framework and process for how to achieve product market fit. The information given is to help contribute to the ideas of the Lean Startup method and describes the Lean Product Process: a repeatable, easy to follow methodology for iterating to product market fit.
+
+<br><br>
+<b>Areas of Personal Takeaways:</b><br><br>
+1) Quantifying prioritization: Learning how to quantify priororities on what to build and who to build for.
+<br>
+2) Metrics and Analysis: If you were to only read a portion of this book then read chapters 13 & 14, in which the author goes into detail on what to measure and what actionable metrics to prioritize. He also explains the analytics and testing of these metrics.
+<br>
+3) Testing for product market fit: Olsen has created an easy to follow framework that helps businesses and startups iterate towards product market fit.
+<br><br>
+<b>Recommendation:</b> <br><br>
+- Informative: Highly informative. This book sequentially goes through the Lean Agile method and what is needed to be successful. The author hits every main point and explains in detail and with examples.
+<br>
+- Useful: Highly useful. I often come back to this book for reference. The chapters on metrics and analytics were extremely helpful in
+<br>
+- Readability: Moderate.
+<br>
+- Overall: 4.5/5. I absolutely would recommend this book to anyone regardless of their experience. This book thoroughly explains what you need to do, why you need to do it, and how to go about it. I find myself going back to this book for reference quite often. A fast read and definitely worth your time.
+<br><br>
+<b>Additional Information:</b><br><br>
+Author: Dan Olsen<br>
+Pages: 281<br>
+Price: $26.99 - Hardcover<br>
+Amazon Rating: 4.5 stars
+
+<br><br><br>
+
+
+        </p>
+
+        </div>
+    </div>
+
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                    <h2>Overview</h2>
+                    <p>An APM intern and former technical project analyst breaking into product management one book, side project, and blog post at a time.</p>
+                </div>
+
+                <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                    <h2>Follow me</h2>
+                    <p>Let's be Social</p>
+                    <div>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="move-up">
+                <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+            </div>
+        </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+
+    <script>
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+	     $(".zoom img").css({
+		       transform: 'translate3d(-50%, -'+(scroll/100)+'%, 0) scale('+(100 + scroll/5)/100+')',
+		//Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments
+		//"-webkit-filter": "blur(" + (scroll/200) + "px)",
+		//filter: "blur(" + (scroll/200) + "px)"
+	   });
+    });
+
+
+    </script>
+
+</html>
